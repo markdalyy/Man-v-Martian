@@ -1,3 +1,35 @@
 extends KinematicBody2D
-class_name Actor
+class_name Actor # to be extended by other actors
 
+# Vector2 takes values for x and y axis 
+const FLOOR_NORMAL: = Vector2.UP  # Vector2(0.0, -1.0)
+
+# export makes variable configurable in the Inspector tab
+export var speed: = Vector2(300.0, 1000.0) # max speed on each axis
+export var gravity: = 4000.0
+
+# amount of pixels player moves per second in a given direction
+var _velocity: = Vector2.ZERO # Vector2(0.0, 0.0)
+# by default, the player will not move
+
+
+func _physics_process(delta: float) -> void:
+	_velocity.y += gravity * delta
+	_velocity = move_and_slide(_velocity)
+#	if _velocity.y > speed.y:
+#		_velocity.y = speed.y
+#	_velocity.y = min(_velocity.y, speed.y)
+
+
+
+# Notes:
+
+# godot will call _physics_process every frame (30-60 fps)
+# generally where you want to place the player movement
+# for objects that will collide, i.e. detect floor and walls
+
+# delta is time elapsed since previous frame (not constant)
+# makes code frame rate independent
+# e.g. to get the amount of pixels you want to move in one frame: velocity * delta
+# if game slows down the player stil moves at the same speed
+# slow computer or resource heavy scene
