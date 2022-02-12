@@ -26,7 +26,6 @@ animations = [ {
 extents = Vector2( 12, 17 )
 
 [node name="Player" type="KinematicBody2D"]
-scale = Vector2( 3.75, 3.75 )
 script = ExtResource( 8 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
