@@ -4,6 +4,7 @@ extends Actor
 # the first function called on every node in the scene tree 
 # starting with the deepest node
 func _ready() -> void:
+	set_physics_process(false) # deactivate enemies (until in view)
 	$AnimatedSprite.play()
 	_velocity.x = -speed.x # opposite direction to player
 
