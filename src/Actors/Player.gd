@@ -1,5 +1,7 @@
 extends Actor
 
+export (PackedScene) var bullet_scene
+
 
 func _ready():
 	$AnimatedSprite.play()
@@ -11,6 +13,7 @@ func _physics_process(_delta: float) -> void:
 	_velocity = calculate_move_velocity(_velocity, direction, speed, is_jump_interrupted)
 	_velocity = move_and_slide(_velocity, FLOOR_NORMAL) # floor normal enables jump function
 	animate(direction)
+	shoot()
 
 
 func get_direction() -> Vector2:
@@ -59,4 +62,12 @@ func animate(direction: Vector2) -> void:
 		$AnimatedSprite.offset = Vector2(0, 8)
 	else:
 		$AnimatedSprite.offset = Vector2(0, 0)
+		
+		
+func shoot() -> void:
+	if Input.is_action_just_pressed("shoot"):
+		var bullet = bullet_scene.instance()
+		get_parent().add_child(bullet) # unbinds bullet speed from player speed
+		# by adding bullet as a child of the root node (instead of Player)
+		bullet.position = $BulletSpawnPosition.global_position
 		

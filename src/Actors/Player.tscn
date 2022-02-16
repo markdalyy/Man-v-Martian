@@ -22,14 +22,14 @@ animations = [ {
 "name": "stand",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
-"name": "down",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "down",
 "speed": 5.0
 } ]
 
@@ -53,3 +53,6 @@ shape = SubResource( 1 )
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 0, 2 )
 current = true
+
+[node name="BulletSpawnPosition" type="Position2D" parent="."]
+position = Vector2( 12, -22 )
