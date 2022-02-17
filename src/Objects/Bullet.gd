@@ -1,7 +1,12 @@
 extends Area2D
 
-export var velocity: = Vector2(200.0, 0)
+export var speed: = 200.0
+	
 	
 func _physics_process(delta: float) -> void:
-	position += velocity * delta
+	var velocity := Vector2.RIGHT * speed
+	translate(velocity * delta)
 	
+
+func _on_VisibilityNotifier2D_screen_exited() -> void:
+	queue_free() # destroys bullet outside the view 
