@@ -16,6 +16,10 @@ func _physics_process(_delta: float) -> void:
 	shoot()
 
 
+func _on_EnemyDetector_body_entered(body: Node) -> void:
+	die()
+
+
 func get_direction() -> Vector2:
 	# input strength ranges from -1 (left/up) to 1 (right/down)
 	return Vector2(
@@ -71,3 +75,7 @@ func shoot() -> void:
 		# by adding bullet as a child of the root node (instead of Player)
 		bullet.position = $BulletSpawnPosition.global_position
 		
+		
+func die() -> void:
+	queue_free()
+
