@@ -56,6 +56,16 @@ shape = SubResource( 1 )
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 0, 2 )
 current = true
+limit_left = 0
+limit_top = 0
+limit_bottom = 240
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+smoothing_speed = 7.0
+drag_margin_left = 0.0
+drag_margin_right = 0.0
 
 [node name="BulletSpawnPosition" type="Position2D" parent="."]
 position = Vector2( 12, -22 )
