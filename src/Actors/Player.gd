@@ -46,7 +46,7 @@ func calculate_move_velocity(
 	
 func animate(direction: Vector2) -> void:
 	if direction.length() == 0:
-		$AnimatedSprite.animation = "stand" # idle default
+		$AnimatedSprite.animation = "idle" # default
 	if direction.x != 0:
 		$AnimatedSprite.animation = "run"
 		$AnimatedSprite.flip_h = direction.x < 0

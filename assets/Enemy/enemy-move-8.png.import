@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/player-stand.png-26f135b6dcc4dee38e0f047d1ea5670d.stex"
+path="res://.import/enemy-move-8.png-06c1be1f83a8fa013495733484e4a880.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player-stand.png"
-dest_files=[ "res://.import/player-stand.png-26f135b6dcc4dee38e0f047d1ea5670d.stex" ]
+source_file="res://assets/Enemy/enemy-move-8.png"
+dest_files=[ "res://.import/enemy-move-8.png-06c1be1f83a8fa013495733484e4a880.stex" ]
 
 [params]
 

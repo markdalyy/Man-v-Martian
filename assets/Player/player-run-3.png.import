@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemy-move-1.png-e42e809ddd472e78097954a3220a3afe.stex"
+path="res://.import/player-run-3.png-70a77185b70250c2bf4f77f5c15b6fab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/enemy-move-1.png"
-dest_files=[ "res://.import/enemy-move-1.png-e42e809ddd472e78097954a3220a3afe.stex" ]
+source_file="res://assets/Player/player-run-3.png"
+dest_files=[ "res://.import/player-run-3.png-70a77185b70250c2bf4f77f5c15b6fab.stex" ]
 
 [params]
 
