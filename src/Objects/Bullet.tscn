@@ -4,7 +4,7 @@
 [ext_resource path="res://src/Objects/Bullet.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 1.5, 1.5 )
+extents = Vector2( 4.20063, 2.4942 )
 
 [node name="Bullet" type="Area2D"]
 collision_layer = 4
@@ -18,6 +18,8 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 0, 0.0170035 )
+scale = Vector2( 2.79858, 1.678 )
 rect = Rect2( -1.5, -1.5, 3, 3 )
 
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

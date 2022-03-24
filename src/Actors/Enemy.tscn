@@ -19,10 +19,10 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 10.75, 30 )
+extents = Vector2( 10.75, 29.6667 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 10.6667, 30 )
+extents = Vector2( 10.6667, 29.6667 )
 
 [node name="Enemy" type="KinematicBody2D"]
 scale = Vector2( 3, 3 )
@@ -37,12 +37,12 @@ animation = "move"
 speed_scale = 1.4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 2.25, -30 )
+position = Vector2( 2.25, -29.6667 )
 shape = SubResource( 1 )
 
 [node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
-position = Vector2( 0, -7 )
-scale = Vector2( 0.7, 0.7 )
+position = Vector2( 0, -12.8986 )
+scale = Vector2( 0.7, 1.28986 )
 rect = Rect2( -12, -36, 24, 46 )
 process_parent = true
 physics_process_parent = true
@@ -53,7 +53,7 @@ collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BulletDetector"]
 modulate = Color( 0, 0.392157, 1, 1 )
-position = Vector2( 2.33333, -30 )
+position = Vector2( 2.33333, -29.6667 )
 shape = SubResource( 3 )
 
 [connection signal="area_entered" from="BulletDetector" to="." method="_on_BulletDetector_area_entered"]
