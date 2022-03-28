@@ -51,21 +51,21 @@ func animate(direction: Vector2) -> void:
 		$AnimatedSprite.animation = "run"
 		$AnimatedSprite.flip_h = direction.x < 0
 		$AnimatedSprite.flip_v = false
-		$AnimatedSprite.offset = Vector2(0, 0) # reset offset
+#		$AnimatedSprite.offset = Vector2(0, 0) # reset offset
 	elif direction.y < 0:
 		#$AnimatedSprite.animation = "jump"
 		pass
 	elif Input.is_action_pressed("look_up"):
 		$AnimatedSprite.animation = "up"
-		if $AnimatedSprite.flip_h == false:
-			$AnimatedSprite.offset = Vector2(-4, -6)
-		else:
-			$AnimatedSprite.offset = Vector2(4, -6)
+#		if $AnimatedSprite.flip_h == false:
+#			$AnimatedSprite.offset = Vector2(-4, -6)
+#		else:
+#			$AnimatedSprite.offset = Vector2(4, -6)
 	elif Input.is_action_pressed("lie_down"):
 		$AnimatedSprite.animation = "down"
-		$AnimatedSprite.offset = Vector2(0, 8)
-	else:
-		$AnimatedSprite.offset = Vector2(0, 0)
+#		$AnimatedSprite.offset = Vector2(0, 8)
+#	else:
+#		$AnimatedSprite.offset = Vector2(0, 0)
 		
 		
 func shoot() -> void:
