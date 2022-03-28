@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/markdalyy/Man-v-Martian">
-    <img src="icon.png" alt="Logo" height="80" width="80"/>
+    <img src="icon.png" alt="Logo" height="94" width="94"/>
   </a>
   <h3>Man-v-Martian</h3>
 
