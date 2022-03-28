@@ -74,6 +74,9 @@ func shoot() -> void:
 		get_parent().add_child(bullet) # unbinds bullet speed from player speed
 		# by adding bullet as a child of the root node (instead of Player)
 		bullet.position = $BulletSpawnPosition.global_position
+		if $AnimatedSprite.flip_h:
+			bullet.set_direction(bullet.get_direction() * -1)
+			bullet.position.x = bullet.position.x - 138
 		
 		
 func die() -> void:
