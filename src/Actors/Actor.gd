@@ -5,7 +5,7 @@ class_name Actor # to be extended by other actors
 const FLOOR_NORMAL: = Vector2.UP  # Vector2(0.0, -1.0)
 
 # export makes variable configurable in the Inspector tab
-export var speed: = Vector2(250.0, 400.0) # max speed on each axis
+export var speed: = Vector2(250.0, 425.0) # max speed on each axis
 export var gravity: = 800.0
 
 # amount of pixels player moves per second in a given direction
