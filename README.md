@@ -10,12 +10,6 @@
     <br />
     <a href="https://github.com/markdalyy/Man-v-Martian"><strong>Explore the project »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/markdalyy/Man-v-Martian">View Demo</a>
-    ·
-    <a href="https://github.com/markdalyy/Man-v-Martian/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/markdalyy/Man-v-Martian/issues">Request Feature</a>
   </p>
 </div>
 
