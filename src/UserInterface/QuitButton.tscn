@@ -5,7 +5,7 @@ margin_top = 66.0
 margin_right = 422.0
 margin_bottom = 128.0
 size_flags_vertical = 3
-text = "Play"
+text = "Quit"
 __meta__ = {
 "_edit_use_anchors_": false
 }
