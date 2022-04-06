@@ -80,5 +80,6 @@ func shoot() -> void:
 		
 		
 func die() -> void:
-	queue_free()
+#	queue_free()
+	get_tree().reload_current_scene()
 
