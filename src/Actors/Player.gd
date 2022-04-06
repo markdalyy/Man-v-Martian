@@ -5,6 +5,7 @@ export (PackedScene) var bullet_scene
 
 func _ready():
 	$AnimatedSprite.play()
+	$Music.play()
 	
 	
 func _physics_process(_delta: float) -> void:

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/POL-elevators-long.wav-4413f85aea95f43b302c7f9781e374cb.sample"
+
+[deps]
+
+source_file="res://assets/POL-elevators-long.wav"
+dest_files=[ "res://.import/POL-elevators-long.wav-4413f85aea95f43b302c7f9781e374cb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
