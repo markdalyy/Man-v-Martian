@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/tileset.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://assets/Background/DNA.png" type="Texture" id=6]
 [ext_resource path="res://assets/Background/grid.png" type="Texture" id=7]
 [ext_resource path="res://src/Objects/Doorway2D.tscn" type="PackedScene" id=8]
-[ext_resource path="res://src/Stages/Stage2.tscn" type="PackedScene" id=9]
 
 [sub_resource type="TileSet" id=6]
 0/name = "grid1"
@@ -305,5 +304,4 @@ position = Vector2( 1520, 321 )
 position = Vector2( 2159, 419 )
 
 [node name="Doorway2D" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2306, 431 )
-next_scene = ExtResource( 9 )
+position = Vector2( 2319, 427 )

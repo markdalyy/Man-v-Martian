@@ -23,14 +23,14 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ) ],
-"loop": true,
-"name": "down",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "down",
 "speed": 5.0
 } ]
 
@@ -60,7 +60,7 @@ position = Vector2( 0, 2 )
 current = true
 limit_left = 0
 limit_top = 0
-limit_right = 2560
+limit_right = 2496
 limit_bottom = 720
 limit_smoothed = true
 drag_margin_h_enabled = true

@@ -7,7 +7,7 @@ onready var anim_player: AnimationPlayer = $AnimationPlayer
 export var next_scene: PackedScene
 
 
-func _on_body_entered(body: Node) -> void:
+func _on_body_entered(body: PhysicsBody2D) -> void:
 	teleport()
 
 

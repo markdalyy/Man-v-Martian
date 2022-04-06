@@ -4,7 +4,7 @@
 [ext_resource path="res://src/Objects/Doorway2D.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8.5, 34 )
+extents = Vector2( 17, 34 )
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -89,16 +89,17 @@ tracks/1/keys = {
 }
 
 [node name="Doorway2D" type="Area2D"]
+scale = Vector2( 3, 3 )
 collision_layer = 0
 monitorable = false
 script = ExtResource( 2 )
 
 [node name="Doorway" type="Sprite" parent="."]
-position = Vector2( -3, -34 )
+position = Vector2( 0, -34 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -3, -34 )
+position = Vector2( 0, -34 )
 shape = SubResource( 1 )
 
 [node name="TransitionLayer" type="CanvasLayer" parent="."]
@@ -117,3 +118,5 @@ __meta__ = {
 anims/RESET = SubResource( 2 )
 anims/START = SubResource( 3 )
 anims/fade_in = SubResource( 4 )
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
