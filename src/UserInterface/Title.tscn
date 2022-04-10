@@ -4,9 +4,9 @@
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -47.0
-margin_top = 224.0
+margin_top = 86.0
 margin_right = 47.0
-margin_bottom = 238.0
+margin_bottom = 100.0
 text = "Man v. Martian"
 align = 1
 __meta__ = {
