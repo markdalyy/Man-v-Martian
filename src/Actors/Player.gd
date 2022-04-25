@@ -36,9 +36,9 @@ func calculate_move_velocity(
 	) -> Vector2:
 	var out: = linear_velocity
 	out.x = speed.x * direction.x # horizontal movement
-	out.y += gravity * get_physics_process_delta_time()
-	if direction.y == -1.0:
-		out.y = speed.y * direction.y # jump
+	out.y += gravity * get_physics_process_delta_time() # vertical movement
+	if direction.y == -1.0: # if jump is pressed
+		out.y = speed.y * direction.y
 	if is_jump_interrupted:
 		out.y = 0.0
 	return out
