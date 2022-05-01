@@ -1,5 +1,6 @@
 extends Actor
 
+export var score: = 100
 
 # the first function called on every node in the scene tree 
 # starting with the deepest node
@@ -27,4 +28,5 @@ func die() -> void:
 	# ensure player won't collide with killed enemy
 	$CollisionShape2D.set_deferred("disabled", true)
 	queue_free() # deletes enemy node
+	PlayerData.score += score
 	

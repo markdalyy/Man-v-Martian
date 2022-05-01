@@ -6,7 +6,11 @@ export (PackedScene) var bullet_scene
 func _ready():
 	$AnimatedSprite.play()
 	
-	
+
+func _on_EnemyDetector_body_entered(body: Node) -> void:
+	die()
+
+
 func _physics_process(_delta: float) -> void:
 	var is_jump_interrupted: = Input.is_action_just_released("jump") and _velocity.y < 0.0
 	var direction: = get_direction()
@@ -14,10 +18,6 @@ func _physics_process(_delta: float) -> void:
 	_velocity = move_and_slide(_velocity, FLOOR_NORMAL) # floor normal enables jump function
 	animate(direction)
 	shoot()
-
-
-func _on_EnemyDetector_body_entered(body: Node) -> void:
-	die()
 
 
 func get_direction() -> Vector2:
@@ -80,6 +80,7 @@ func shoot() -> void:
 		
 		
 func die() -> void:
-#	queue_free()
-	get_tree().reload_current_scene()
+	# get_tree().reload_current_scene()
+	PlayerData.deaths += 1
+	queue_free()
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/tileset.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/Background/grid.png" type="Texture" id=7]
 [ext_resource path="res://src/Objects/Doorway2D.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/Stages/Stage2.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/Stages/Stage1.gd" type="Script" id=11]
 [ext_resource path="res://assets/full-tileset.png" type="Texture" id=12]
 
@@ -409,10 +410,15 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 [node name="Stage1" type="Node2D"]
 script = ExtResource( 11 )
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="UserInterface" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="UserInterface" parent="UserInterface" instance=ExtResource( 10 )]
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
 layer = -100
 
-[node name="Background" type="TextureRect" parent="CanvasLayer"]
+[node name="Background" type="TextureRect" parent="BackgroundLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 5 )
