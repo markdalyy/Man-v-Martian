@@ -1,56 +1,23 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://assets/tileset.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Actors/Enemy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Objects/Bullet.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/Background/background.png" type="Texture" id=5]
-[ext_resource path="res://assets/Background/DNA.png" type="Texture" id=6]
-[ext_resource path="res://assets/Background/grid.png" type="Texture" id=7]
+[ext_resource path="res://assets/Background/bg.png" type="Texture" id=6]
 [ext_resource path="res://src/Objects/Doorway2D.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=9]
-[ext_resource path="res://assets/theme/ui_theme.tres" type="Theme" id=10]
 [ext_resource path="res://src/Stages/Stage1.gd" type="Script" id=11]
 [ext_resource path="res://assets/full-tileset.png" type="Texture" id=12]
-[ext_resource path="res://src/UserInterface/UserInterface.gd" type="Script" id=13]
 [ext_resource path="res://src/Screens/EndScreen.tscn" type="PackedScene" id=14]
 
-[sub_resource type="TileSet" id=6]
-0/name = "grid1"
-0/texture = ExtResource( 7 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 624, 720 )
-0/tile_mode = 0
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = -99
-1/name = "grid2"
-1/texture = ExtResource( 7 )
-1/tex_offset = Vector2( 0, 0 )
-1/modulate = Color( 1, 1, 1, 1 )
-1/region = Rect2( 624, 0, 624, 720 )
-1/tile_mode = 0
-1/occluder_offset = Vector2( 0, 0 )
-1/navigation_offset = Vector2( 0, 0 )
-1/shape_offset = Vector2( 0, 0 )
-1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape_one_way = false
-1/shape_one_way_margin = 0.0
-1/shapes = [  ]
-1/z_index = -99
-
 [sub_resource type="TileSet" id=5]
-0/name = "DNA1"
+0/name = "1"
 0/texture = ExtResource( 6 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 640, 720 )
+0/region = Rect2( 0, 0, 960, 540 )
 0/tile_mode = 0
 0/occluder_offset = Vector2( 0, 0 )
 0/navigation_offset = Vector2( 0, 0 )
@@ -59,12 +26,12 @@
 0/shape_one_way = false
 0/shape_one_way_margin = 0.0
 0/shapes = [  ]
-0/z_index = -98
-1/name = "DNa2"
+0/z_index = 0
+1/name = "2"
 1/texture = ExtResource( 6 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
-1/region = Rect2( 640, 0, 640, 720 )
+1/region = Rect2( 960, 0, 960, 540 )
 1/tile_mode = 0
 1/occluder_offset = Vector2( 0, 0 )
 1/navigation_offset = Vector2( 0, 0 )
@@ -73,7 +40,35 @@
 1/shape_one_way = false
 1/shape_one_way_margin = 0.0
 1/shapes = [  ]
-1/z_index = -98
+1/z_index = 0
+2/name = "3"
+2/texture = ExtResource( 6 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 540, 960, 540 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "4"
+3/texture = ExtResource( 6 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 960, 540, 960, 540 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -409,21 +404,13 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 } ]
 17/z_index = 0
 
-[node name="Stage1" type="Node2D"]
+[node name="Stage2" type="Node2D"]
 script = ExtResource( 11 )
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 layer = 100
 
-[node name="UserInterface" type="Control" parent="UserInterface" instance=ExtResource( 9 )]
-pause_mode = 2
-anchor_right = 1.0
-anchor_bottom = 1.0
-theme = ExtResource( 10 )
-script = ExtResource( 13 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="UserInterface" parent="UserInterface" instance=ExtResource( 9 )]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -100
@@ -432,23 +419,17 @@ layer = -100
 anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 5 )
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Grid" type="TileMap" parent="."]
-z_index = -99
-tile_set = SubResource( 6 )
-cell_size = Vector2( 624, 720 )
-format = 1
-tile_data = PoolIntArray( 0, 0, 0, 1, 1, 0, 2, 0, 0, 3, 1, 0, 4, 0, 0 )
-
 [node name="DNA" type="TileMap" parent="."]
 z_index = -98
 tile_set = SubResource( 5 )
-cell_size = Vector2( 640, 720 )
+cell_size = Vector2( 960, 540 )
 format = 1
-tile_data = PoolIntArray( 0, 0, 0, 1, 1, 0, 2, 0, 0, 3, 1, 0, 4, 0, 0 )
+tile_data = PoolIntArray( 0, 0, 0, 1, 1, 0, 2, 0, 0, 65536, 2, 0, 65537, 3, 0, 65538, 2, 0 )
 
 [node name="Tiles" type="TileMap" parent="."]
 position = Vector2( 0, -48 )
