@@ -22,6 +22,8 @@ func _physics_process(delta: float) -> void:
 		_velocity.x *= -1.0
 		$AnimatedSprite.flip_h = !$AnimatedSprite.flip_h
 	_velocity.y = move_and_slide(_velocity, FLOOR_NORMAL).y
+	if position.y > 1080:
+		die()
 
 
 func die() -> void:

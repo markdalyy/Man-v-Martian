@@ -18,6 +18,8 @@ func _physics_process(_delta: float) -> void:
 	_velocity = move_and_slide(_velocity, FLOOR_NORMAL) # floor normal enables jump function
 	animate(direction)
 	shoot()
+	if position.y > 1080:
+		die()
 
 
 func get_direction() -> Vector2:
