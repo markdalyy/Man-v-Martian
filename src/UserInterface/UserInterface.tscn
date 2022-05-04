@@ -20,10 +20,11 @@ __meta__ = {
 [node name="Score" type="Label" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -436.0
+margin_left = -403.0
 margin_top = 42.0
-margin_right = -112.0
+margin_right = -78.9998
 margin_bottom = 78.0
+rect_scale = Vector2( 0.8, 0.8 )
 text = "Score: %s"
 align = 2
 
