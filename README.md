@@ -42,10 +42,6 @@
 
 This is a fun platform game where your character must shoot at alien enemies to try and escape from their captivity.
 
-It is currently in development with a deadline of Monday 25th April.
-
-I have made a small demo of the game available to test out.
-
 ### Built With
 
 * [Godot](https://godotengine.org/)
@@ -55,7 +51,7 @@ I have made a small demo of the game available to test out.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Instructions on how to view the entire project locally (if you just want to play the demo, <a href="#installation">skip to Installation</a>).
+Instructions on how to view the entire project locally (if you just want to play the game, <a href="#installation">skip to Installation</a>).
 
 To get a local copy up and running follow these simple steps.
 
@@ -90,6 +86,7 @@ Go to the [Releases](https://github.com/markdalyy/Man-v-Martian/releases "Releas
 * Use either the arrows or WASD keys to move the player.
 * Jump over obstacles by using the spacebar.
 * Fire at alien enemies with the F key.
+* Pause game with esc key.
 
 <!--Click [here](https://github.com/markdalyy/Man-v-Martian "Demo") to view the demo.-->
 
